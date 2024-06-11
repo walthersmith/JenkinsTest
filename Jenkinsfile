@@ -3,7 +3,7 @@ pipeline{
 
     stages {
         stage('Build'){
-            step{
+            steps{
                 script {
                     sh 'javac src/sample/Hello.java'
                     sh 'cd src ; jar cf Hello.jar sample/Hello.class'
