@@ -12,7 +12,7 @@ pipeline{
         }
         stage('Archive') {
             steps {
-                archiveArtifacts artifacts: 'src/Hello.jar', finger
+                archiveArtifacts artifacts: 'src/Hello.jar', fingerprint: true
             }
         }
     }
